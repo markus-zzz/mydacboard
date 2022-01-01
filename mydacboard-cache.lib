@@ -133,8 +133,8 @@ ENDDEF
 #
 # mysymbols_myaudiojack
 #
-DEF mysymbols_myaudiojack U 0 40 Y Y 1 F N
-F0 "U" -200 250 50 H V C CNN
+DEF mysymbols_myaudiojack J 0 40 Y Y 1 F N
+F0 "J" -200 250 50 H V C CNN
 F1 "mysymbols_myaudiojack" 0 -350 50 H V C CNN
 F2 "mydacboard:myaudiojack" 0 -450 50 H I C CNN
 F3 "" -200 250 50 H I C CNN

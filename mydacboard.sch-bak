@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mysymbols:myaudiojack U2
+L mysymbols:myaudiojack J2
 U 1 1 61CE04F5
 P 9150 1050
-F 0 "U2" H 9428 1051 50  0000 L CNN
+F 0 "J2" H 9428 1051 50  0000 L CNN
 F 1 "myaudiojack" H 9428 960 50  0000 L CNN
 F 2 "mydacboard:myaudiojack" H 9150 600 50  0001 C CNN
 F 3 "" H 8950 1300 50  0001 C CNN
@@ -210,13 +210,13 @@ Text GLabel 3350 2900 2    50   Output ~ 0
 SCL
 Text GLabel 3350 3000 2    50   BiDi ~ 0
 SDA
-Text GLabel 2200 3200 2    50   Output ~ 0
+Text GLabel 2200 3100 2    50   Output ~ 0
 LRCLK
-Text GLabel 2200 3300 2    50   Output ~ 0
+Text GLabel 2200 3200 2    50   Output ~ 0
 BCLK
-Text GLabel 2200 3400 2    50   Output ~ 0
+Text GLabel 2200 3300 2    50   Output ~ 0
 SDIN
-Text GLabel 2200 3600 2    50   Output ~ 0
+Text GLabel 2200 3400 2    50   Output ~ 0
 MCLK
 Wire Wire Line
 	5700 2500 5700 2650
@@ -359,7 +359,6 @@ NoConn ~ 1700 3200
 NoConn ~ 1700 3100
 NoConn ~ 1700 3000
 NoConn ~ 1700 2900
-NoConn ~ 2200 3500
 Wire Wire Line
 	4750 3000 4750 4000
 Wire Wire Line
@@ -386,7 +385,7 @@ Wire Wire Line
 	6200 4000 6200 4100
 Connection ~ 6200 4000
 NoConn ~ 5600 2650
-Text GLabel 3350 3100 2    50   Input ~ 0
+Text GLabel 3350 3600 2    50   Input ~ 0
 GPIO
 Text GLabel 6600 3550 2    50   Output ~ 0
 GPIO
@@ -439,7 +438,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3000 2800 3000
 Wire Wire Line
-	2200 3100 3100 3100
+	2200 3600 3100 3600
 Wire Wire Line
 	2500 2850 2500 2900
 Connection ~ 2500 2900
@@ -450,11 +449,9 @@ Wire Wire Line
 Connection ~ 2800 3000
 Wire Wire Line
 	2800 3000 3350 3000
+Connection ~ 3100 3600
 Wire Wire Line
-	3100 2850 3100 3100
-Connection ~ 3100 3100
-Wire Wire Line
-	3100 3100 3350 3100
+	3100 3600 3350 3600
 Wire Wire Line
 	2500 2550 2500 2500
 Wire Wire Line
@@ -549,4 +546,7 @@ Wire Wire Line
 	5100 1300 5500 1300
 Wire Wire Line
 	5500 1300 5500 1350
+Wire Wire Line
+	3100 2850 3100 3600
+NoConn ~ 2200 3500
 $EndSCHEMATC

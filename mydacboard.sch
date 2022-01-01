@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mysymbols:myaudiojack U2
+L mysymbols:myaudiojack J2
 U 1 1 61CE04F5
 P 9150 1050
-F 0 "U2" H 9428 1051 50  0000 L CNN
+F 0 "J2" H 9428 1051 50  0000 L CNN
 F 1 "myaudiojack" H 9428 960 50  0000 L CNN
 F 2 "mydacboard:myaudiojack" H 9150 600 50  0001 C CNN
 F 3 "" H 8950 1300 50  0001 C CNN
